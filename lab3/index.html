@@ -17,17 +17,17 @@
 				<p class="red">*Обязательно</p>
 				<div class="name">
 					<h1>Please fill your name<span class="red">*</span></h1>
-					<input type="text" class="first" value="Your answer">
+					<input type="text" class="first" placeholder="Your answer">
 				</div>
 
 				<div class="type-color">
 					<h2>What color you like</h2>
-					<input type="radio">Red<Br>
-					<input type="radio">Green<Br>
-					<input type="radio">Blue<Br>
-					<input type="radio">Black<Br>
-					<input type="radio">White<Br>
-					<input type="radio">Other: <input type="text" class="first" >
+					<input type="radio" name="radAnswer">Red<Br>
+					<input type="radio" name="radAnswer">Green<Br>
+					<input type="radio" name="radAnswer">Blue<Br>
+					<input type="radio" name="radAnswer">Black<Br>
+					<input type="radio" name="radAnswer">White<Br>
+					<input type="radio" name="radAnswer">Other: <input type="text" class="first" >
 				</div>
 
 				<div class="town-like">
@@ -42,7 +42,7 @@
 
 				<div class="progr-language">
 					<h2>Please describe (at least 50 symbols on symbols) your favorite programming language<span class="red">*</span></h2>
-					<input type="text" class="first" value="Your answer" style="width: 60%">
+					<input type="text" class="first" placeholder="Your answer" style="width: 60%">
 				</div>
 
 				<div class="years-education">
@@ -55,7 +55,8 @@
 
 				<div class="send-image">
 					<h2>Please send any image<span class="red">*</span></h2>
-					<a href="#">add file</a>
+					<label for="upload-photo">add file</label>
+					<input type="file" name="photo" id="upload-photo" />
 				</div>
 
 				<div class="set-last">
