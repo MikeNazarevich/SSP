@@ -1,2 +1,2 @@
 # SSP
-for subject in university
+laboratory works
