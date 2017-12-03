@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 import Icon from '../Icon/Icon';
 import Text from '../Text';
 
-class IconPlusText extends Component {
+class Contacts extends Component {
   render() {
     return (
-      <div className="IconPlusText">
+      <div className="Contacts">
         <Icon icon="address-card-o"/>
         <Text text="@facebook"/>
 
@@ -23,4 +23,4 @@ class IconPlusText extends Component {
   }
 }
 
-export default IconPlusText;
+export default Contacts; 

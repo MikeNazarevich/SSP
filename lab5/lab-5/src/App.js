@@ -1,11 +1,65 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Icon from './Icon/Icon';
-import IconPlusText from './IconPlusText/IconPlusText';
+import MainInf from './MainInf/MainInf';
+
+class Tabs extends Component {
+  state = {
+    activeIndex: 0
+  }
+
+  selectTabIndex(activeIndex) {
+    this.setState({ activeIndex })
+  }
+
+  renderTabs() {
+    const { data } = this.props;
+    return data.map((tab, index) => {
+      const isActive = this.state.activeIndex === index
+      return (
+        <div 
+          key={index}
+          className={isActive ? 'tab active' : 'tab'}
+          onClick={() => this.selectTabIndex(index)}
+        >{tab.label}
+        </div>
+      )
+    })
+  }
+
+  renderPanel() {
+    const { data } = this.props;
+    const { activeIndex } = this.state;
+    return <div>{data[activeIndex].content}</div>
+  }
+
+  render() {
+    return (
+      <div className="Tabs">
+        <div className="tabs">
+          {this.renderTabs()}
+        </div>
+        <div className="panels">
+          {this.renderPanel()}
+        </div>
+      </div>
+    )
+  }
+}
 
 class App extends Component {
   render() {
+    const tabData = [
+      { label: "kek1",
+        content: "kukarek"
+      },
+      { label: "kek2",
+        content: "sfsdfsd"
+      },
+      { label: "kek3",
+        content: "lolkek"
+      },      
+    ]
     return (
       <div className="App">
         <header className="App-header">
@@ -15,12 +69,8 @@ class App extends Component {
         <div className="App-intro">
 
 
-          {/* <Icon icon="address-card-o"/>
-          <Icon icon="map-marker"/>
-          <Icon icon="envelope-o"/>
-          <Icon icon="link"/> */}
-          <IconPlusText />
-
+        <MainInf/>
+        <Tabs data={tabData}/>
           
 
         </div>
