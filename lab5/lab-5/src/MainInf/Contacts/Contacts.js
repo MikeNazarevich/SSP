@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 // import './IconPlusText.css';
 import Icon from '../Icon/Icon';
-import Text from '../Text';
+import Text from '../Icon/Text';
 
 class Contacts extends Component {
   render() {
     return (
       <div className="Contacts">
-        <Icon icon="address-card-o"/>
-        <Text text="@facebook"/>
-
+        <Icon icon={this.props.icon}/>
+        <Text text={this.props.href} text={this.props.text}/>
+{/* 
         <Icon icon="map-marker"/>
         <Text text="London, UK"/>
 
@@ -17,7 +17,7 @@ class Contacts extends Component {
         <Text href="kudato.com" text="Dan Abraham"/>
 
         <Icon icon="link"/>
-        <Text href="tudato.com" text="twitter.com"/>
+        <Text href="tudato.com" text="twitter.com"/> */}
       </div>
     );
   }
