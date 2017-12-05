@@ -8,7 +8,7 @@ class Name extends Component {
 
     return (
       <div className="Name">
-        <i>{name}</i>
+        <h1>{name}</h1>
       </div>
     );
   }

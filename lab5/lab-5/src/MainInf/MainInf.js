@@ -4,7 +4,7 @@ import Photo from './Photo';
 import Name from './Name';
 import Nickname from './Nickname';
 import Info from './Info';
-import Contacts from '../Contacts/Contacts';
+import Contacts from './Contacts/Contacts';
 
 
 class MainInf extends Component {
@@ -15,7 +15,13 @@ class MainInf extends Component {
         <Name name='Mikhail Nazarevich'/>
         <Nickname nickname='mishka3097'/>
         <Info info='lolkekcheburelolkekcheburek lolkekcheburelolkekcheburek lolkekcheburelolkekcheburek'/>
-        <Contacts />
+
+        <Contacts icon="address-book-o" text="@BSTU"/>
+        <Contacts icon="map-marker" text="London, UK"/>
+        <Contacts icon="envelope-o" text="Dan Abraham"/>
+        <Contacts icon="link" text="twitter.com"/>
+        
+
       </div>
     );
   }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import './IconPlusText.css';
+import './MainInf.css';
 
 
 class Photo extends Component {
