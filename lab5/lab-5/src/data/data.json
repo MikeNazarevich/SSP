@@ -1,0 +1,23 @@
+
+  {
+    "photo": "https://pp.userapi.com/c604725/v604725987/51302/ZfqWW11mj64.jpg",
+    "name": "Mikhail Nazarevich", 
+    "nickname": "mishka3097",
+    "info": "lolkekcheburek",
+    "contacts": {
+        "work": {
+            "text": "@BSTU"
+        },
+        "location": {
+            "text": "Brest, BY"
+        },
+        "email": {
+            "text": "mishka300397@gmail.com",
+            "href": "mishka300397@gmail.com"
+        },
+        "link": {
+            "text": "github.com/mishka3097",
+            "href": "github.com/mishka3097"
+        }
+    }
+  }

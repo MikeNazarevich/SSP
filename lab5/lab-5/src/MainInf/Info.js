@@ -1,17 +1,13 @@
 import React, { Component } from 'react';
-// import './IconPlusText.css';
-
 
 class Info extends Component {
-  render() {
-    const info = this.props.info;
-
-    return (
-      <div className="Info">
-        <i>{info}</i>
-      </div>
-    );
-  }
+    render() {
+        return(
+            <div className="Info">
+                <p>{this.props.info}</p>
+            </div>
+        )
+    }
 }
 
 export default Info;
