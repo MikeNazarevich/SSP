@@ -27,6 +27,13 @@
   to { transform: rotate(360deg); }
 } */
 
+.Photo {
+  /* background-color: red; */
+}
+img {
+  width: 300px;
+  border-radius: 100px;
+}
 .App {
   width: 60%;
   margin: 250px auto;
@@ -40,10 +47,16 @@
   width: 30%;
 }
 
-h1{
+h1 {
   margin-bottom: 0px;
 }
-.Nickname {
+
+.name {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.nickname {
   font-size: 1.5em;
   color: gray;
   margin-bottom: 30px;
@@ -53,8 +66,12 @@ h1{
   margin-bottom: 30px;
 }
 
-.Contacts {
+.IconText {
   display: flex;
+}
+
+a {
+  text-decoration: none;
 }
 
 .Icon {
